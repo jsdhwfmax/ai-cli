@@ -22,9 +22,9 @@ Unlike other tools that lock you into one ecosystem, **AI-CLI is 100% model-agno
 
 Make sure you have [Go](https://go.dev/) installed on your machine.
 
-```bash
+` ``bash
 # 1. Clone the repo
-git clone [https://github.com/jsdhwfmaX/ai-cli.git](https://github.com/jsdhwfmaX/ai-cli.git)
+git clone https://github.com/jsdhwfmaX/ai-cli.git
 cd ai-cli
 
 # 2. Build the binary
@@ -39,22 +39,22 @@ sudo mv ai /usr/local/bin/
 ## ⚙️ Configuration
 
 Run the command for the first time to generate the config file:
-```bash
+` ``bash
 ai "hello"
 ` ``
 It will create a configuration file at `~/.ai-cli.json` in your home directory. Open it and replace the content with your preferred AI provider:
 
 ### 🔹 Option 1: DeepSeek (Default)
-```json
+` ``json
 {
-  "api_base_url": "[https://api.deepseek.com/chat/completions](https://api.deepseek.com/chat/completions)",
+  "api_base_url": "https://api.deepseek.com/chat/completions",
   "api_key": "sk-your-deepseek-key-here",
   "model": "deepseek-chat"
 }
 ` ``
 
 ### 🔹 Option 2: Gemini
-```json
+` ``json
 {
   "api_base_url": "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
   "api_key": "AIzaSy-your-gemini-key-here",
@@ -63,9 +63,9 @@ It will create a configuration file at `~/.ai-cli.json` in your home directory. 
 ` ``
 
 ### 🔹 Option 3: OpenAI
-```json
+` ``json
 {
-  "api_base_url": "[https://api.openai.com/v1/chat/completions](https://api.openai.com/v1/chat/completions)",
+  "api_base_url": "https://api.openai.com/v1/chat/completions",
   "api_key": "sk-your-openai-key-here",
   "model": "gpt-4o-mini"
 }
@@ -79,7 +79,7 @@ It will create a configuration file at `~/.ai-cli.json` in your home directory. 
 
 Just type `ai` followed by your request in **any language**:
 
-```bash
+` ``bash
 $ ai "kill the process running on port 8080"
 🤖 AI Engine [deepseek-chat] is thinking...
 
@@ -89,7 +89,7 @@ lsof -ti:8080 | xargs kill -9
 ----------------------------------------
 ` ``
 
-```bash
+` ``bash
 $ ai "convert all mp4 files in this directory to mp3"
 🤖 AI Engine [gemini-2.5-flash] is thinking...
 
